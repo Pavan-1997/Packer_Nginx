@@ -21,3 +21,8 @@ Disadvantages:
 ```
 Manageability: No AMI manageability is provided by packer. You need to manage them yourself using tags or versions. Keep deleting old unused AMIs.
 ```
+
+![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/fdda7a2c-2af1-4c11-9f9c-a6d7b7937f9b)
+
+
+
