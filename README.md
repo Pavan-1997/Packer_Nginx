@@ -98,3 +98,5 @@ AMI that is created:
 
 6. Now create an EC2 Instance from the AMI and access the Nginx 
 
+![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/a40cd52f-4927-4192-a60e-fe363c55eec0)
+
