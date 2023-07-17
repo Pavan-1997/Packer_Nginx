@@ -82,7 +82,7 @@ packer validate main.pkr.hcl
 5. Build the packer file
 ```
 packer build -var "aws_access_key=<Your-Key>" -var "aws_secret_key=<Your-Key>" main.pkr.hcl
-
+```
 You can see the EC2 instance is created temporarily:
 ![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/9af0f118-dfc4-4f02-a0f9-5670833ac885)
 
