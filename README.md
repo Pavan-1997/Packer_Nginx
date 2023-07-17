@@ -24,5 +24,16 @@ Manageability: No AMI manageability is provided by packer. You need to manage th
 
 ![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/fdda7a2c-2af1-4c11-9f9c-a6d7b7937f9b)
 
+1. Declare all the required VM configurations in an HCL (Hashicorp configuration language) or a JSON file. Let’s call it the Packer template.
 
+2. To build the VM image, execute Packer with the Packer template..
 
+3. Packer authenticates the remote cloud provider and launches a server. If you execute Packer from a cloud environment, it leverages the cloud service account for authentication.
+
+4. Packer takes a remote connection to the server (SSH or Winrm).
+
+5. Then it configures the server based on the provisioner you specified in the Packer template (Shell script, Ansible, Chef, etc).
+
+6. Registers the AMI
+
+7. Deletes the running instance
