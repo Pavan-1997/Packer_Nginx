@@ -1,4 +1,4 @@
-# Packer for Nginx
+# Packer
 
 - Hashicorp Packer is a lightweight, easy-to-use tool which automates the creation of any type of machine images for multiple platforms. 
 - Packer is not a replacement for configuration management tools like Ansible. 
