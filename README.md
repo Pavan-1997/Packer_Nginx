@@ -96,5 +96,5 @@ You can see the EC2 instance is stopped after executing the provisioner and crea
 AMI that is created:
 ![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/86dcf381-6988-445c-9d59-cbfa40082137)
 
-
+6. Now create an EC2 Instance from the AMI and access the Nginx 
 
