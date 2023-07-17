@@ -39,10 +39,9 @@ Disadvantages:
 7. Deletes the running instance
 
 
-- Packer is template-driven, templates are written in JSON format or HCL
-- The template is divided into 3 sections:
+Packer is template-driven, templates are written in JSON format or HCL and the template is divided into 3 sections:
 ```
-- Variables: Custom variables that can be overridden during runtime by using the -var flag. In the above snippet, we’re specifying the AWS region.
+- Variables: Custom variables that can be overridden during runtime by using the -var flag.
 
 - Builders: You can specify multiple builders depending on the target platforms (EC2, VMware, Google Cloud, Docker …).
 
