@@ -46,6 +46,10 @@ Packer is template-driven, templates are written in JSON format or HCL and the t
 ```
 - Variables: Custom variables that can be overridden during runtime by using the -var flag.
 
+- Locals: It is scoped within the Packer template. If you want to pass any sensitive information in a variable, you can convert it to a local value and then mark it as sensitive. This way, the value won’t be printed anywhere in the Packer build logs.
+
+- Source: It is used to define the source of the machine image you want to build. It specifies the type of source (e.g., AWS, VirtualBox, Docker, etc.) and the specific configuration for that source.
+
 - Builders: You can specify multiple builders depending on the target platforms (EC2, VMware, Google Cloud, Docker …).
 
 - Provisioners: You can pass a shell script or use configuration management tools like Ansible, Chef, Puppet or Salt to provision the AMI and install all required packages and software
