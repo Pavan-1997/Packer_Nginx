@@ -19,7 +19,7 @@ Advantages:
 Disadvantages:
 
 ```
-Manageability: No AMI manageability is provided by packer. You need to manage them yourself using tags or versions. Keep deleting old unused AMIs.
+- Manageability: No AMI manageability is provided by packer. You need to manage them yourself using tags or versions. Keep deleting old unused AMIs.
 ```
 
 ![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/fdda7a2c-2af1-4c11-9f9c-a6d7b7937f9b)
@@ -42,7 +42,9 @@ Manageability: No AMI manageability is provided by packer. You need to manage th
 - Packer is template-driven, templates are written in JSON format or HCL
 - The template is divided into 3 sections:
 ```
-variables: Custom variables that can be overridden during runtime by using the -var flag. In the above snippet, we’re specifying the AWS region.
-builders: You can specify multiple builders depending on the target platforms (EC2, VMware, Google Cloud, Docker …).
-provisioners: You can pass a shell script or use configuration management tools like Ansible, Chef, Puppet or Salt to provision the AMI and install all required packages and software
+- Variables: Custom variables that can be overridden during runtime by using the -var flag. In the above snippet, we’re specifying the AWS region.
+
+- Builders: You can specify multiple builders depending on the target platforms (EC2, VMware, Google Cloud, Docker …).
+
+- Provisioners: You can pass a shell script or use configuration management tools like Ansible, Chef, Puppet or Salt to provision the AMI and install all required packages and software
 ```
