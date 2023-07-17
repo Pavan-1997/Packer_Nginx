@@ -56,3 +56,29 @@ Packer is template-driven, templates are written in JSON format or HCL and the t
 
 - Post-Processor: This is not a mandatory block. In this block, we can specify what to do after creating the Image. For example, you can execute a local shell script to create a file with all the image details.
 ```
+---
+# Deploying Nginx AMI using Packer
+
+1. Install the Packer on your system and set the path for the environment variable.
+
+
+2. User the below command int the terminal to check the packer version and to confirm if it is installed
+```
+packer --version
+```
+
+
+3. Initialize the packer
+``` 
+packer init main.pkr.hcl
+```
+
+
+4. Validate the packer
+```
+packer validate main.pkr.hcl
+```
+
+5. Build the packer file
+```
+packer build -var "aws_access_key=<Your-Key>" -var "aws_secret_key=<Your-Key>" main.pkr.hcl
