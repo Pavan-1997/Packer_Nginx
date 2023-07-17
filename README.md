@@ -82,3 +82,19 @@ packer validate main.pkr.hcl
 5. Build the packer file
 ```
 packer build -var "aws_access_key=<Your-Key>" -var "aws_secret_key=<Your-Key>" main.pkr.hcl
+
+You can see the EC2 instance is created temporarily:
+![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/9af0f118-dfc4-4f02-a0f9-5670833ac885)
+
+
+You can see the EC2 instance is stopped after executing the provisioner and creating an AMI:
+![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/33db140f-efdb-4efa-bec6-8a2802ad5090)
+
+![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/7f4b49f0-3da2-4c37-a2dd-716ed89ff0aa)
+
+
+AMI that is created:
+![image](https://github.com/Pavan-1997/Packer_Nginx/assets/32020205/86dcf381-6988-445c-9d59-cbfa40082137)
+
+
+
