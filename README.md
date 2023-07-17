@@ -15,3 +15,9 @@ Advantages:
 - Multi-provider support: Packer can be used to create images for multiple cloud providers like AWS, GCP, Digital Ocean etc.
 - Provides testability: Machine images can be tested to verify that they are working.
 ```
+
+Disadvantages:
+
+```
+Manageability: No AMI manageability is provided by packer. You need to manage them yourself using tags or versions. Keep deleting old unused AMIs.
+```
