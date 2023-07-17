@@ -49,4 +49,6 @@ Packer is template-driven, templates are written in JSON format or HCL and the t
 - Builders: You can specify multiple builders depending on the target platforms (EC2, VMware, Google Cloud, Docker …).
 
 - Provisioners: You can pass a shell script or use configuration management tools like Ansible, Chef, Puppet or Salt to provision the AMI and install all required packages and software
+
+- Post-Processor: This is not a mandatory block. In this block, we can specify what to do after creating the Image. For example, you can execute a local shell script to create a file with all the image details.
 ```
