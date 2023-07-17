@@ -11,8 +11,11 @@ Advantages:
 
 ```
 - Fast infrastructure deployment: Machine images allow us to launch provisioned and configured machines faster.
+
 - Scalable: Packer install and configure all software for a machine during image creation time, so we don’t need to run any configuration management tool. With same AMI we can spawn any number of instances without doing extra configuration.
+
 - Multi-provider support: Packer can be used to create images for multiple cloud providers like AWS, GCP, Digital Ocean etc.
+
 - Provides testability: Machine images can be tested to verify that they are working.
 ```
 
